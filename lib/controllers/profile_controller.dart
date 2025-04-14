@@ -7,6 +7,8 @@ import 'package:http/http.dart' as http;
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
+
 
 class ProfileController extends GetxController {
   File? profileImage;
@@ -38,8 +40,9 @@ class ProfileController extends GetxController {
   }
 
   Future<String?> uploadImageToCloudinary(File imageFile) async {
-    const String uploadPreset = 'qxl49pfm';
-    const String apiKey = '716346215499246';
+final String uploadPreset = dotenv.env['CLOUDINARY_UPLOAD_PRESET']!;
+final String apiKey = dotenv.env['CLOUDINARY_API_KEY']!;
+
 
     final url = Uri.parse(
       "https://api.cloudinary.com/v1_1/do9dkxsc0/image/upload",
