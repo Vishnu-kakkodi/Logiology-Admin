@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "885960821713",
+    "project_id": "logiology-admin",
+    "storage_bucket": "logiology-admin.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:885960821713:android:d3a4812f9fda362e77aef0",
+        "android_client_info": {
+          "package_name": "com.example.logiology_admin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBr-4_Fvv3uvCmLM7YNCtO96nobHVY7s7U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
